@@ -388,7 +388,7 @@ protections.
     cd NEMS/tests
     nohup sh -c 'cat apps.def commit.def | ./multi-app-test.sh <ID> <PLATFORM> master /path/to/file/with/commit/message'
 
-17. On each NOAA machine, user Somebody.Else deletes
+17. On one NOAA machine, user Somebody.Else deletes
 the temporary test branches:
 
     cd NEMS/tests
