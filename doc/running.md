@@ -96,16 +96,16 @@ Options will be discussed later.  The `run-mode` determines whether
 the system will create a new baseline, or execute and verify against
 the old baseline.  To generate a new baseline:
 
-    ./NEMS/NEMSCompsetRun [options] --make-baseline compset-specification
+    ./NEMS/NEMSCompsetRun [options] --baseline compset-specification
 
-Without that `--make-baseline` flag, the system will run in the
+Without that `--baseline` flag, the system will run in the
 default mode: execute the tests and verify against the baseline.
 
 The compset specification can be done in the following ways.  These
 select either specific compsets or groups of compsets.  We will
 discuss how compset groups work, in the next section.
 
- * `--make-baseline` -- run all tests that are part of the baseline
+ * `--baseline` -- run all tests that are part of the baseline
  * `-f` -- run all known tests
  * `-s` -- run tests in the "standard" group
  * `--compset (compset-name)` -- run the specified compset
