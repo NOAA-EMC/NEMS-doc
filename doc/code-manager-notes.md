@@ -53,7 +53,7 @@ WCOSS, jetscp is frequently faster than Theia or HPSS because the
 dedicated network line between WCOSS and Theia/HPSS is often clogged.
 Transfers from WCOSS to Jet go through a different route.
 
-Critical NEMS Crontabs
+Critical NEMS Crontabs:
 ----------------------
 
 There are eight crontabs for NEMS: four for nemspara, and four for a
