@@ -53,6 +53,7 @@ clean:
 doc: clean
 	./prep_inputs.py ..
 	set -x ; $(DOXYGEN)
+	./convert.sh
 	tar -cpzf webpage.tar.gz html Doxyfile
 
 deliver: html

@@ -4,7 +4,6 @@ import re, subprocess, sys, getopt, datetime, glob, os
 
 bad_flag=False # set to true if errors occur
 
-FLAG_FILE='success-flag-file.txt'
 NEMS_PROJECT_NAME='NEMS'
 NEMS_MAIN_PAGE_MD='nemsmain.md'
 APP_DOC_MAIN='doc/README.md'  # app-level main doc file relative to app-level checkout
@@ -53,15 +52,6 @@ def main():
                     dw.write(get_milestones())
                 else:
                     dw.write(line)
-
-    if not bad_flag:
-        with open(FLAG_FILE,'wt') as successf:
-            successf.write('Doxygen setup completed at %s\n'%(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),))
-    elif os.path.exists(FLAG_FILE):
-        os.remove(FLAG_FILE)
-        error('Errors detected.  Please fix them and rerun.\n')
-        sys.exit(1)
 
 # ----------------------------------------------------------------------
 
